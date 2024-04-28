@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+body {
+  color: azure !important;
+  background-color: #0048ca;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* font family*/
+@font-face {
+  font-family: Dancing;
+  src: url("/public/font/DancingScript-Regular.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Dancing;
+  src: url("/public/font/DancingScript-Medium.ttf");
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+  font-family: Dancing;
+  src: url("/public/font/DancingScript-Bold.ttf");
+  font-weight: 600;
+}
+@media only screen and (max-width: 399px) {
+  /* Ajoutez ici les styles spécifiques pour les appareils mobiles */
+
+  /* Exemple de style pour ajuster la taille du texte */
+  .card {
+    flex-direction: column;
+    max-width: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .date {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  body {
+    font-size: 14px;
   }
+
+  /* Exemple de style pour ajuster la largeur d'un élément */
+
+  /* Exemple de style pour masquer un élément sur les appareils mobiles */
 }
